@@ -1,5 +1,6 @@
 ---
 const pagetitle= "HOME PAGE";
+import "../pages/styles/global.css"
 ---
 
 <html lang="en">
@@ -9,13 +10,22 @@ const pagetitle= "HOME PAGE";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>pagetitle</title>
+		<style>
+			h1 {
+				color:blueviolet;
+				font-size: 4rem;
+				
+			}
+			body{
+				background-color: beige;
+			}
+
+		</style>
 	</head>
 	<body>
 		  <a href="/">Home</a>
   			<a href="/about/">About</a>
  			 <a href="/blog/">Blog</a>
 		<h1>{pagetitle}</h1>
-		<h2>Hello Darkscout</h2>
-		<h3>hey there</h3>
 	</body>
 </html>
