@@ -1,6 +1,7 @@
 ---
 import "../pages/styles/global.css"
-
+import Navigation from "../pages/components/navigation.astro"
+import Footer from "../pages/components/footer.astro"
 const pageTitle = "About Me";
 
  const identity = {
@@ -43,10 +44,7 @@ const pageTitle = "About Me";
             </style>
 
 <body>
-      <a href="/">Home</a>
-      <a href ="/about">About</a>
-            <a href="/blog/">Blog</a>
-    
+<Navigation/>
   <h1>{pageTitle}</h1>         
   <h1>My Astro Site</h1>
   <h2>... and my new Astro site!</h2>
@@ -68,5 +66,6 @@ const pageTitle = "About Me";
 </ul>
 {happy && <p>I am happy to learn astro</p>}
 {finished && <p>i have finished the course</p>}
+<Footer />
 </body>
 </html>
