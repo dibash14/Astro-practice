@@ -1,10 +1,10 @@
 ---
 
-import Header from "../pages/components/header.astro"
-import Footer from  "../pages/components/footer.astro"
+import Header from "../components/header.astro"
+import Footer from  "../components/footer.astro"
 // import Navigation from "../pages/components/navigation.astro"
 const pagetitle= "HOME PAGE";
-import "../pages/styles/global.css"
+import "../styles/global.css"
 ---
 
 <html lang="en">
@@ -26,5 +26,9 @@ import "../pages/styles/global.css"
 <Header />
 		<h1>{pagetitle}</h1>
 		<Footer />
+		 
+  <script>
+    import "../scripts/menu.js";
+  </script>
 	</body>
 </html>
